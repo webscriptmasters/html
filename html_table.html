@@ -1,0 +1,97 @@
+
+<!DOCTYPE html>
+<!--
+WEB SCRIPT MASTERS
+https://www.webscriptmasters.com
+webscriptmasters@gmail.com
+https://www.youtube.com/@webscriptmasters
+-->
+<html>
+<head>
+    <title>HTML Beginner Guide to Tables</title>
+</head>
+<body>
+    <table border="1">
+        <tr>
+            <th>Day</th>
+            <th>Activity</th>
+        </tr>
+        <tr>
+            <td>Monday</td>
+            <td>Gym</td>
+        </tr>
+        <tr>
+            <td>Tuesday</td>
+            <td>Swimming</td>
+        </tr>
+    </table>
+    <hr>
+    <h1>Adding a Table Caption</h1>
+
+    <table border="1">
+        <caption>Weekly Activities</caption>
+        <tr>
+            <th>Day</th>
+            <th>Activity</th>
+        </tr>
+        <tr>
+            <td>Monday</td>
+            <td>Gym</td>
+        </tr>
+    </table>
+    <h1>Column Span</h1>
+
+    <table>
+        <tr>
+            <th colspan="2">Schedule</th>
+        </tr>
+        <tr>
+            <td>Monday</td>
+            <td>Gym</td>
+        </tr>
+    </table>
+    <h1>Row Span</h1>
+    <table>
+        <tr>
+            <th>Day</th>
+            <th>Activity</th>
+        </tr>
+        <tr>
+            <td rowspan="2">Monday</td>
+            <td>Gym</td>
+        </tr>
+        <tr>
+            <td>Swimming</td>
+        </tr>
+    </table>
+    <h1>Adding Borders and Styling</h1>
+    <style>
+        .table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        .table th,
+        .table td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: left;
+        }
+
+        .table th {
+            background-color: #f2f2f2;
+        }
+    </style>
+    <table class="table">
+        <tr>
+            <th>Day</th>
+            <th>Activity</th>
+        </tr>
+        <tr>
+            <td>Monday</td>
+            <td>Gym</td>
+        </tr>
+    </table>
+</body>
+
+</html>
